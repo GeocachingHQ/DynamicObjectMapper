@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">  
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <language>en-US</language>
+    <projectUrl>https://stash.hq.groundspeak.biz/projects/NETF/repos/lib-groundspeak.dynamicpropertymapper/browse</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library used to dynamically generate an object containing a dictionary of the requested properties along with their respective values given a source object</description>
+    <releaseNotes>Initial Revision.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Dynamic Property Mapper PropertyMapper DynamicPropertyMapper IL Properties</tags>
+  </metadata>
+  <files>
+    <file src="ReadMe.txt" target="" />
+  </files>
+</package>
