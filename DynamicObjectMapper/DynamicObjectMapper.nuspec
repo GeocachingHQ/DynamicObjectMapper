@@ -7,7 +7,7 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <language>en-US</language>
-    <projectUrl>https://stash.hq.groundspeak.biz/projects/NETF/repos/lib-groundspeak.dynamicpropertymapper/browse</projectUrl>
+    <projectUrl>https://github.com/GeocachingHQ/DynamicObjectMapper</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Library used to dynamically generate an object containing a dictionary of the requested properties along with their respective values given a source object</description>
     <releaseNotes>Initial Revision.</releaseNotes>

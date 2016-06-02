@@ -14,9 +14,9 @@ Usage:
                 BoolProperty = true
             };
 
-            var dynamicMapper = new Groundspeak.DynamicPropertyMapper.DynamicObjectMapper<MyObject>();
+            var dynamicMapper = new DynamicPropertyMapper.DynamicObjectMapper<MyObject>();
             // OR 
-            // var dynamicMapper = new Groundspeak.DynamicPropertyMapper.DynamicObjectMapperIL<MyObject>();
+            // var dynamicMapper = new DynamicPropertyMapper.DynamicObjectMapperIL<MyObject>();
 
             var mappedObject = dynamicMapper.Map(myObject, "BoolProperty, StringProperty");
 
