@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace DynamicObjectMapper
 {
@@ -90,6 +91,20 @@ namespace DynamicObjectMapper
             {
                 outputParent.Add(propertyDelegate.Name, propertyDelegate.Getter.Invoke(source, null));
             }
+        }
+
+        public async Task<object> ReshapeObjectAsync(string properties, T originalObject)
+        {
+            var propertyArray = properties?.Split(',').Select(c => c.Trim()).ToArray();
+            bool getEverything = properties == null || !properties.Any();
+
+            if (getEverything)
+            {
+                return originalObject;
+            }
+
+            var mappedData = this.Map(originalObject, propertyArray);
+            return await Task.FromResult(mappedData.Cast<object>());
         }
     }
 }

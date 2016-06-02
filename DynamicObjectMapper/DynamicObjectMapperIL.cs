@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Threading.Tasks;
 
 namespace DynamicObjectMapper
 {
@@ -184,6 +185,11 @@ namespace DynamicObjectMapper
 
             // Add the value of the property to the dictionary
             il.Emit(OpCodes.Callvirt, dictionaryAddMethod);
+        }
+
+        public async Task<object> ReshapeObjectAsync(string properties, T originalObject)
+        {
+            throw new NotImplementedException();
         }
     }
 }
